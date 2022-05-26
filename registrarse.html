@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecno FC</title>
+    <link rel="icon" href="Imagenes/loguito-tomito-.ico" sizes="32x32" />
+    <link rel="stylesheet" href="CSS/registrarse.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="imagenes/loguito tomito .png" alt="Escudo"></a>
+    </header>
+    <h2>Nuevo/a socio/a</h2>
+    <form action="">
+        <div class="contenedorPrincipal">
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre">
+                <span id="errorNombre"> </span>         
+            </div>
+            <div>
+                <label for="apellido">Apellido: </label>
+                <input type="text" id="apellido" name="apellido">
+                <span id="errorApellido"> </span>
+            </div>
+            <div>
+                <label for="fecha">Fecha de nacimiento: </label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+            <div>
+                <label for="sexo">Sexo: </label>
+                <select name="sexo" id="sexo">
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
+                    <option value="3">Otro</option>
+                </select>
+            </div>
+            <div class="enLinea">
+                <div>
+                    <label for="doc">Documento: </label>
+                    <select name="doc" id="doc">
+                        <option value="1">DNI</option>
+                        <option value="2">PASAPORTE</option>
+                    </select>
+                </div>
+                <div>
+                    <input type="text" id="identificacion" name="identificacion">
+                    <span id="errorIdentificacion"> </span>
+                </div>
+            </div>
+            <div>
+                <label for="telefono">Telefono: </label>
+                <input type="text" id="telefono" name="telefono">
+                <span id="errorTelefono"> </span>
+            </div>
+            <div>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email">
+                <span id="errorEmail"> </span>            
+            </div>
+            <div class="enviar">
+                <input type="submit" value="Enviar" id="boton">
+            </div>
+        </div>
+
+    </form>
+    <script src="javaScript/formulario.js"></script>
+</body>
+</html>
