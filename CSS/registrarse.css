@@ -62,3 +62,24 @@ img{
 span{
     color: red;
 }
+
+@media only screen and (max-width: 900px) {
+    /* Tablet: */
+    .contenedorPrincipal{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .enviar input{
+        height: 6vw;
+        width: 20vw;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .enviar input{
+        height: 8vw;
+        width: 25vw;
+    }
+}
+
