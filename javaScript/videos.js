@@ -1,4 +1,4 @@
-//Base de datos
+//Links
 
 const tripleErrada = "https://www.youtube.com/embed/-LDEMXhNfI0";
 const autoGol = "https://www.youtube.com/embed/05RH5hgrgPg";
@@ -6,8 +6,8 @@ const maradoniano = "https://www.youtube.com/embed/eLhnll5BD3U";
 const remontada = "https://www.youtube.com/embed/WdI16q56yjg";
 const celebracion = "https://www.youtube.com/embed/5VCME0qIyPU";
 const bombazo = "https://www.youtube.com/embed/EXmzZO8vj_s";
-const chilenarda = "https://www.youtube.com/embed/HgKycsit6CI";
-const canio = "https://www.youtube.com/embed/9auQV8BRcX8";
+const canio = "https://www.youtube.com/embed/HgKycsit6CI";
+const chilenarda = "https://www.youtube.com/embed/9auQV8BRcX8";
 const inexplicableGol = "https://www.youtube.com/embed/QX7tx0l4j10";
 const escorpion = "https://www.youtube.com/embed/wNXEXfwJSmY";
 const balaDeCanion = "https://www.youtube.com/embed/jch3QMK0E-A";
@@ -24,7 +24,7 @@ const videos = [tripleErrada,autoGol,maradoniano,remontada,celebracion,bombazo,c
 const botones = document.querySelectorAll("button");
 
 function cambiarVideo(botonApretado){
-    // const posicion = botones.findIndex((boton,botonApretado) => boton == botonApretado); 
+    // const posicion = botones.findIndex((boton,botonApretado) => boton == botonApretado); No funciona
     const videoActual = document.querySelector("iframe");
     for(posicion in botones){
         if(botones[posicion] == botonApretado){
@@ -34,43 +34,3 @@ function cambiarVideo(botonApretado){
 
 }
 
-
-
-
-// const app = Vue.createApp({
-//         data(){
-//             return{
-//                 videoActual: querySelector("iframe")
-//             }
-//         },
-//         methods: {
-//             cambiarVideo(){
-                
-//             }
-//         }
-//     }
-// );
-
-// Vue.component('videoActual',{
-//     template: '<iframe width="560" height="315" src={{actual}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>',
-//     data(){
-//         return{
-//             actual:"https://www.youtube.com/embed/-LDEMXhNfI0",
-//             videos: [
-//                 tripleErrada,autoGol,maradoniano],
-//             botones: document.querySelectorAll("button")
-//         }
-//     },
-//     methods: {
-//         cambiarVideo(botonApretado){
-//             for(let i in this.botones){
-//                 if(botones[i] == botonApretado){
-//                     this.actual = this.videos[i];
-//                 }
-//             }
-//         }
-//     }
-
-// })
-
-// app.mount('#videos');
