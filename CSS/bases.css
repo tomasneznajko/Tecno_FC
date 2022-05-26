@@ -112,6 +112,10 @@ footer{
       height: auto;
     }
 
+    nav div{
+        padding: 2%;
+    }
+
     .contenedorPrincipal{
         margin: 0;
     }
