@@ -68,8 +68,6 @@ form.addEventListener('submit',(event) => {
         form.submit()
         window.location.replace("index.html");
         // const registro = document.querySelector(".registro");
-        // registro.innerHTML = "<div><h2>Bienvenido</h2></div>";      //No entiende el evento la página index
-
-        
+        // registro.innerHTML = "<div><h2>Bienvenido</h2></div>";      //No entiende el evento la página index   
     }
 })
